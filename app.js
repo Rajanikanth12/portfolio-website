@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		event.preventDefault(); // Prevent the default behavior of the anchor tag
   
 		// Define the path to your resume file
-		const resumeFilePath = 'Nikhil_Cv.pdf'; // Update this with your file's path
+		const resumeFilePath = 'resume.pdf'; // Update this with your file's path
   
 		// Check if the file exists at the specified path
 		fetch(resumeFilePath)
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			  const downloadLink = document.createElement('a');
 			  downloadLink.href = resumeFilePath;
 			  downloadLink.target = '_blank'; // Open the link in a new tab
-			  downloadLink.download = 'Nikhil_Cv.pdf'; // Rename the downloaded file
+			  downloadLink.download = 'resume.pdf'; // Rename the downloaded file
   
 			  // Trigger a click event on the link to initiate the download
 			  downloadLink.click();
